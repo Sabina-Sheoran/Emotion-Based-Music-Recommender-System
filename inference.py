@@ -22,6 +22,9 @@ while True:
 	lst = []
 
 	_, frm = cap.read()
+	if _ == False:
+		print("Error: Camera read failed")
+		break
 
 	frm = cv2.flip(frm, 1)
 
