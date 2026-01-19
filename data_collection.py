@@ -18,6 +18,9 @@ while True:
 	lst = []
 
 	_, frm = cap.read()
+	if _ == False:
+		print("Error: Camera not accessible")
+		break
 
 	frm = cv2.flip(frm, 1)
 
